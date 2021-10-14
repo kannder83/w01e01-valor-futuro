@@ -18,6 +18,16 @@ const resultFutureValue = () => {
       ((FUTURE_VALUE / PRESENT_VALUE) ** (1 / PERIODS) - 1) *
       100
     ).toFixed(2);
+  } else if (!PRESENT_VALUE) {
+    presentValue.disabled = true;
+    presentValue.value = (FUTURE_VALUE / (1 + INTEREST) ** PERIODS).toFixed(2);
+  } else if (!PERIODS) {
+    periods.isabled = true;
+    periods.value = (
+      Math.log(FUTURE_VALUE / PRESENT_VALUE) / Math.log(1 + INTEREST)
+    ).toFixed(0);
+  } else if (!PERIODS && !PRESENT_VALUE && !INTEREST && !FUTURE_VALUE) {
+    console.log("Digitar datos.");
   }
 };
 
