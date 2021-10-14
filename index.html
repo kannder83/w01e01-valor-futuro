@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Inversión</title>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Calculadora Inversión</h1>
+        <article>
+          <h3>Instrucciones:</h3>
+          <div>
+            <h4>Valor Futuro:</h4>
+            <p>
+              Llenar los campos de Valor Presente, Interes y Periodos. Luego
+              clic en calcular.
+            </p>
+          </div>
+          <div>
+            <h4>Interes:</h4>
+            <p>
+              Llenar los campos de Valor Presente, Periodos y Valor Futuro.
+              Luego clic en calcular.
+            </p>
+          </div>
+        </article>
+        <form>
+          <label for="presentValue">
+            <input
+              id="presentValue"
+              type="number"
+              placeholder="Valor Presente"
+            />
+          </label>
+          <label for="interest">
+            <input id="interest" type="number" placeholder="Interes" />
+          </label>
+          <label for="periods">
+            <input id="periods" type="number" placeholder="Periodos" />
+          </label>
+          <label for="futureValue">
+            <input id="futureValue" type="number" placeholder="Valor Futuro" />
+          </label>
+          <button id="calculateFutureValue">Calcular</button>
+        </form>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
