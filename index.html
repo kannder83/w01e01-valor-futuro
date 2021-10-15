@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Calculadora Inversión</title>
   </head>
   <body>
     <div class="container">
       <section class="box-data">
-        <h1>Calculadora Inversión</h1>
         <article class="box-data_title">
+          <h1>Calculadora De Inversión</h1>
           <h3>Instrucciones:</h3>
-          <p>Digitar 3 de los campos solicitados.</p>
+          <p>Digitar 3 de los campos solicitados, luego clic en calcular.</p>
         </article>
         <form class="box-data_form">
-          <label for="presentValue"> Valor Presente: </label>
-          <input id="presentValue" type="number" placeholder="Valor Presente" />
-          <label for="interest"> Interes: </label>
-          <input id="interest" type="number" placeholder="Interes" />
-          <label for="periods"> Periodos: </label>
-          <input id="periods" type="number" placeholder="Periodos" />
-          <label for="futureValue"> Valor Futuro: </label>
-          <input id="futureValue" type="number" placeholder="Valor Futuro" />
+          <label for="presentValue">
+            Valor Presente:
+            <input
+              id="presentValue"
+              type="number"
+              placeholder="Valor Presente"
+            />
+          </label>
+          <label for="interest">
+            Interes:
+            <input id="interest" type="number" placeholder="Interes" />
+          </label>
+          <label for="periods">
+            Periodos:
+            <input id="periods" type="number" placeholder="Periodos" />
+          </label>
+          <label for="futureValue">
+            Valor Futuro:
+            <input id="futureValue" type="number" placeholder="Valor Futuro" />
+          </label>
           <button id="calculateFutureValue">Calcular</button>
           <button id="cleanWindow">Limpiar</button>
         </form>
